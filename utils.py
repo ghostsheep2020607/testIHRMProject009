@@ -72,14 +72,3 @@ def read_emp_data(filepath, interface_name):
     print("读取的{}员工数据为:{}".format(interface_name, result_list))
     return result_list
 
-
-# 它的作用是：只有在当前函数运行时，才会运行if条件里面的代码
-if __name__ == '__main__':
-
-    # 定义员工数据路径
-    filepath2 = app.BASE_DIR + "/data/emp_data.json"
-    # 读取员工数据
-    read_emp_data(filepath2, 'add_emp')
-    read_emp_data(filepath2, 'query_emp')
-    read_emp_data(filepath2, 'modify_emp')
-    read_emp_data(filepath2, 'delete_emp')
